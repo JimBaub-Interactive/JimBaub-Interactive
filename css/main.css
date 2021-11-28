@@ -10,3 +10,6 @@ body {
   .tabs .indicator{
       background-color:cyan;
   }
+  .justify{
+    text-align: justify;
+  }
