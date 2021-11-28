@@ -9,33 +9,52 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--Custom StyleSheet-->
-    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link href="../css/main.css" type="text/css" rel="stylesheet">
     <title>Benevolent Sabotage | JimBaub Interactive</title>
 
 </head>
 
 <body class="black white-text">
     <!-- Dropdown Structure -->
-    <ul id="dropdown1" class="dropdown-content">
+    <ul id="games-dropdown" class="dropdown-content">
         <li><a href="./games/benevolent-sabotage.html">Benevolent Sabotage</a></li>
     </ul>
     <ul id="about-dropdown" class="dropdown-content">
-        <li><a href="../about/company.html">Company</a></li>
-        <li><a href="../about/team.html">Team</a></li>
+        <li><a href="./about/company.html">Company</a></li>
+        <li><a href="./about/team.html">Team</a></li>
     </ul>
     <nav class="black">
         <div class="nav-wrapper container">
-            <a href="#!" class="brand-logo black"><img src="images/logo.jpg"></a>
+            <a href="../index.html" class="brand-logo black hide-on-med-and-down"><img src="./images/logo.jpg"></a>
+            <a href="../index.html" class="brand-logo hide-on-large-only show-on-medium-and-down">JimBaub Interactive</a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
+                <li><a href="../index.html">Home</a></li>
                 <li><a class="dropdown-trigger" data-target="about-dropdown" href="#!">About<i
                             class="material-icons right">arrow_drop_down</i></a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <!-- Dropdown Trigger -->
-                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Games<i
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="games-dropdown">Games<i
                             class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
         </div>
     </nav>
+
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a class="dropdown-trigger" data-target="about-dropdown-mbl" href="#!">About<i
+                    class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="games-dropdown-mbl">Games<i
+                    class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+
+    <ul id="games-dropdown-mbl" class="dropdown-content">
+        <li><a href="../games/benevolent-sabotage.html">Benevolent Sabotage</a></li>
+    </ul>
+    <ul id="about-dropdown-mbl" class="dropdown-content">
+        <li><a href="../about/company.html">Company</a></li>
+        <li><a href="../about/team.html">Team</a></li>
+    </ul>
     <header class="center">
     </header>
     <main>
@@ -68,7 +87,7 @@
             </div>
         </div>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
